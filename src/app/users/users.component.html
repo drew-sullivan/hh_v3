@@ -1,5 +1,11 @@
 <mat-drawer-container class="example-container" autosize>
+
   <mat-drawer #drawer class="users" mode="side">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Users</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
     <li *ngFor="let user of users">
       <a routerLink="/detail/{{user.id}}">
         <span class="badge">{{user.id}}</span> {{user.name}}
@@ -15,4 +21,3 @@
   </div>
 
 </mat-drawer-container>
-  
