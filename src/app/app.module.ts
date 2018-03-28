@@ -12,6 +12,7 @@ import { MessageService } from './services/message.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { RoutingModule } from './routing.module';
+import { MaterialModule } from './material.module';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data-service';
@@ -31,6 +32,7 @@ import { UserSearchComponent } from './dashboard/user-search/user-search.compone
     FormsModule,
     RoutingModule,
     HttpClientModule,
+    MaterialModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     )
